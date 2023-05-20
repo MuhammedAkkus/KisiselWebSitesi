@@ -44,3 +44,26 @@ nav a:visited{
     margin-right: 7px;
     font-size: 16px;
 }
+
+#banner{
+    height:600px;
+    background-image: url("../img/deneme.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
