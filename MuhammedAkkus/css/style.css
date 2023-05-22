@@ -84,7 +84,7 @@ h3{
         font-weight: 600;
 }
 
-#container{
+.container{
     width: 1200px;
     height: auto;
     margin: auto;
@@ -130,7 +130,7 @@ span{
     font-weight: 100;
 }
 
-.img_fluid{
+.img-fluid{
     max-width: 100%;
     height: auto;
 }
@@ -148,4 +148,32 @@ span{
     font-weight: 100px;
 }
 
+#egitimler{
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    height: 700px;
+}
 
+.card{
+    width: 320px;
+    height: 350px;
+    border: 1px solid
+    #ddd;
+    padding: 0;
+    display: inline-block;
+}
+
+.baslikcard{
+    font-size: 15px;
+    color: #003666;
+}
+
+.cardp{
+    color: #888;
+}
+
+.card:hover{
+    border: 2px solid
+    #003666;
+}
