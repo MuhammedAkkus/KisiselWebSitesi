@@ -177,3 +177,54 @@ span{
     border: 2px solid
     #003666;
 }
+
+#faaliyetler{
+    background-color: #003666;
+    padding: 10px;
+    height: 850px;
+    text-align: center;
+}
+
+#faaliyetlerh3{
+    color: white;
+}
+
+.sutun-sol-sag{
+    width: 385px;
+    float: left;
+    padding: 50px;
+}
+
+.oval{
+    border-radius: 50%;
+}
+
+.faaliyetlerisim{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.faal{
+    color: #888;
+    font-size: 20px;
+}
+
+.social{
+    color: white;
+    border:1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.social:hover{
+    background-color: #888;
+}
+
+.sutun{
+    width: 385px;
+    float: left;
+    padding: 10px;
+}
