@@ -51,7 +51,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-<form action="panelgiris.html" method="post" style="max-width:500px;margin:auto">
+<form action="panelgiris.php" method="post" style="max-width:500px;margin:auto">
   <h2>Giriş Paneli</h2>
   <div class="input-container">
     <i class="fa fa-user icon"></i>
@@ -73,3 +73,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 </body>
 </html>
+
+
+<?php
+
+session_start();
+
+if(isset($_POST["usrnm"], $_POST["email"], $_POST["psw"]))
+{
+    
+    if($_POST["usrnm"]=="Muhammed Akkuş" && $_POST["email"]=="muhammedakkus.tr@gmail.com" && $_POST["psw"]=="12541263")
+    {
+        $_SESSION["user"]=$_POST["usrnm"];
+        header("location:panel.php");
+    }
+    
+    else
+    {
+        echo "<script>alert('Senin Doğru Kişi Olduğunu Düşünmüyorum!!!')</script>";
+    }
+}
+
+?>
