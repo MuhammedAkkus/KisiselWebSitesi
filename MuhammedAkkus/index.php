@@ -121,9 +121,9 @@
                <p class="faal">Google çatısı altında "Google Teknolojileri" başta olmak üzere her türlü yazılım ve teknolojik organizasyonu yönetme görevini yürüttüm.</p>
                
                <div class="faaliyet-ikon">
-                   <a href="https://www.linkedin.com/company/gdsc-banu/"><i class="fa-brands fa-linkedin social"></i></a>
-                   <a href="https://www.instagram.com/gdscbanu/"><i class="fa-brands fa-instagram social"></i></a>
-                   <a href="https://gdsc.community.dev/bandirma-onyedi-eylul-university/"><i class="fa-brands fa-google social"></i></a>
+                   <a href="https://www.linkedin.com/company/gdsc-banu/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                   <a href="https://www.instagram.com/gdscbanu/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                   <a href="https://gdsc.community.dev/bandirma-onyedi-eylul-university/" target="_blank"><i class="fa-brands fa-google social"></i></a>
                </div>
                
            </div>
@@ -134,9 +134,9 @@
                <p class="faal">Üniversite bünyesinde bulunan en büyük öğrenci topluluğunun her alanda gerçekleştirdiği projeleri oluşturma, yürütme ve kontrol etme görevlerini üstlendim.</p>
                
                <div class="faaliyet-ikon">
-                   <a href="https://www.linkedin.com/company/banuset/"><i class="fa-brands fa-linkedin social"></i></a>
-                   <a href="https://www.instagram.com/banu.set/"><i class="fa-brands fa-instagram social"></i></a>
-                   <a href="https://linktr.ee/banu.set"><i class="fa-brands fa-google social"></i></a>
+                   <a href="https://www.linkedin.com/company/banuset/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                   <a href="https://www.instagram.com/banu.set/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                   <a href="https://linktr.ee/banu.set" target="_blank"><i class="fa-brands fa-google social"></i></a>
                </div>
                
            </div>
@@ -147,9 +147,9 @@
                <p class="faal">Mobil Programlama Eğitimi, Google Proje Yönetimi eğitimi, Teknoloji Girişimciliği Eğitimi, 2D ve 3D Game Art Eğitimi aldığım Trainee deneyimine devam ediyorum.</p>
                
                <div class="faaliyet-ikon">
-                   <a href="https://www.linkedin.com/company/oyun-ve-uygulama-akademisi/"><i class="fa-brands fa-linkedin social"></i></a>
-                   <a href="https://www.instagram.com/oyunveuygulamaakademisi/"><i class="fa-brands fa-instagram social"></i></a>
-                   <a href="https://www.oyunveuygulamaakademisi.com/"><i class="fa-brands fa-google social"></i></a>
+                   <a href="https://www.linkedin.com/company/oyun-ve-uygulama-akademisi/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                   <a href="https://www.instagram.com/oyunveuygulamaakademisi/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                   <a href="https://www.oyunveuygulamaakademisi.com/" target="_blank"><i class="fa-brands fa-google social"></i></a>
                </div>
                
            </div>
@@ -203,9 +203,11 @@
                
                <div id="socialfooter"> 
                
-                <a href="https://www.linkedin.com/in/muhammedakkus/"><i class="fa-brands fa-linkedin social"></i></a>
-                <a href="https://www.instagram.com/mhmdakkus/"><i class="fa-brands fa-instagram social"></i></a>
-                <a href="mailto:muhammedakkus.tr@gmail.com"><i class="fa-brands fa-google social"></i></a>
+                <a href="https://www.linkedin.com/in/muhammedakkus/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                <a href="https://www.instagram.com/mhmdakkus/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                <a href="mailto:muhammedakkus.tr@gmail.com" target="_blank"><i class="fa-brands fa-google social"></i></a>
+                <a href="https://github.com/MuhammedAkkus" target="_blank"><i class="fa-brands fa-github social"></i></a>
+                <a href="https://drive.google.com/file/d/1pWcJn1hDFo9vPBZof6T157AYwE_0tp7g/view?usp=sharing" target="_blank"><i class="fa-solid fa-id-card social"></i></a>
                 
                 </div>
                 
