@@ -3,7 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <title>Anasayfa | Muhammed Akkuş</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+    *{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kalam', cursive;
+    margin: 0;
+}
+
+#menu{
+    height: 80px;
+    padding: 0px 20px;
+            display: flex;
+            justify-content:space-between;
+            background-color: rgba(0, 0, 0, 0.09);
+            /*padding: 10px;*/
+            border-radius: 5px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            
+}
+
+#logo{
+    font-size: 30px;
+    line-height: 80px;
+    color: #003666;
+    float: left;
+}
+
+nav{
+    float: right;
+    line-height: 80px;
+}
+
+nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+nav a:hover{
+    border-bottom: 2px solid
+    #003666;
+}
+
+nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #003666;
+}
+
+.icon{
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+#banner{
+    height:600px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+
+#hakkımda{
+    background-color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 55px;
+    color: #003666;
+    text-shadow: 0px 1px 1px
+        black;
+        font-weight: 600;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+} 
+
+#sol{
+    float: left;
+    border-right: 3px solid
+    #445c6e;
+    font-size: 30px;
+    width: 400px;
+    color: #445c6e;
+}
+
+#h5sol{
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 600;
+}
+#h5sol, #sag{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+span{
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color: #003666;
+    font-weight: 600;
+    float: left;
+}
+
+#sag{
+    float: right;
+    width: 750px;
+    color: #999999;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.mt100{
+    margin-top: 100px;
+}
+
+#pson{
+    color: #999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-weight: 100px;
+}
+
+#egitimler{
+    background-color: lavender;
+    padding: 10px;
+    text-align: center;
+    height: 700px;
+}
+
+.card{
+    width: 320px;
+    height: 400px;
+    border: 1px solid
+    #003666;
+    padding: 0;
+    display: inline-block;
+}
+
+.baslikcard{
+    font-size: 15px;
+    color: #003666;
+}
+
+.cardp{
+    color: #888;
+}
+
+.card:hover{
+    border: 2px solid
+    #b03060;
+}
+
+#faaliyetler{
+    background-color: skyblue;
+    padding: 10px;
+    height: 850px;
+    text-align: center;
+}
+
+#faaliyetlerh3{
+    color: white;
+}
+
+.sutun-sol-sag{
+    width: 405px;
+    float: left;
+    padding: 50px;
+}
+
+.oval{
+    border-radius: 50%;
+}
+
+.faaliyetlerisim{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.faal{
+    color: #888;
+    font-size: 20px;
+}
+
+.social{
+    color: white;
+    border:1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.social:hover{
+    background-color: #888;
+}
+
+.sutun{
+    width: 385px;
+    float: left;
+    padding: 10px;
+}
+
+#iletisim{
+    background: url("../img/iletisim.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+
+#h3iletisim{
+    color: white;
+}
+
+#iletisimopak{
+    background: rgba(255,255,255,0.2);
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+
+#formgroup{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform{
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#sagform{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+textarea{
+    font-family: Arial;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    background-color: #445c6e;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#adres{
+    width: 450px;
+    float: right;
+    height: 500px;
+}
+
+#adresbaslik{
+    font-size: 30px;
+}
+
+.adresp{
+    color: #ddd;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+#copyright{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#up{
+    color: white;
+    font-size: 20px;
+    padding: 15px 12px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+        
+@keyframes scrollDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+    </style>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +372,7 @@
     <section id="menu">
         <div id="logo">Muhammed Akkuş</div>
         <nav>
-            <a href="index.php"><i class="fa-solid fa-otter icon"></i>Anasayfa</a>
+            <a href="#banner"><i class="fa-solid fa-otter icon"></i>Anasayfa</a>
             <a href="#hakkımda"><i class="fa-solid fa-user-astronaut icon"></i>Hakkımda</a>
             <a href="#egitimler"><i class="fa-solid fa-biohazard icon"></i>Eğitim ve Sertifakalar</a>
             <a href="#faaliyetler"><i class="fa-brands fa-space-awesome icon"></i>Faaliyetler</a>
@@ -230,10 +582,25 @@
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = document.querySelector(link.getAttribute('href'));
-                window.scrollTo({
-                    top: target.offsetTop,
-                    behavior: 'smooth'
-                });
+                const targetTop = target.getBoundingClientRect().top;
+                const scrollOffset = window.pageYOffset || document.documentElement.scrollTop;
+                const targetPosition = targetTop + scrollOffset;
+                const duration = 1000; // ms
+                const startTime = performance.now();
+
+                const scroll = () => {
+                    const elapsed = performance.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeProgress = 0.5 - 0.5 * Math.cos(Math.PI * progress);
+                    const currentPosition = scrollOffset + (targetPosition - scrollOffset) * easeProgress;
+                    window.scrollTo(0, currentPosition);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(scroll);
+                    }
+                };
+
+                requestAnimationFrame(scroll);
             });
         });
     </script>

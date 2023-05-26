@@ -12,6 +12,17 @@ body{
     padding: 0 20px;
 }
 
+@keyframes scrollDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
 #logo{
     font-size: 30px;
     line-height: 80px;
@@ -189,7 +200,7 @@ span{
 }
 
 .sutun-sol-sag{
-    width: 385px;
+    width: 405px;
     float: left;
     padding: 50px;
 }
