@@ -178,6 +178,24 @@ span{
     #003666;
     padding: 0;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.resim {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.resim img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .baslikcard{
@@ -409,7 +427,7 @@ input[type="submit"]{
         <img src="img/hakkimda.jpg" alt=""
         class="img-fluid mt100">
         
-        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)</p>
+        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)<br><a href="galeri.html" target="_blank"><i class="fa-solid fa-camera-retro icon"></i>Galeri</a></p>
         
         </div>
     </sectioan>
@@ -421,37 +439,37 @@ input[type="submit"]{
        <div class="owl-carousel owl-theme">
            
            <div class="card item" data-merge=1.5>
-               <img src="img/bilgisayar.jpg" alt="" class="img-fluid">
+               <img src="img/bilgisayar.jpg" alt="" class="img-fluid resim">
                <h5 class="baslikcard">Banü/Bilgisayar Mühendisliği</h5>
                <p class="cardp">Bilgisayar ve bilgisayar tabanlı sistemlerin yazılım ve donanımlarının tasarımı, gerçekleştirimi ve yönetimi ile ilgili eğitimler görmektedir.</p>
            </div>
            
            <div class="card item" data-merge=1.5>
-               <img src="img/yonetim.jpg" alt="" class="img-fluid">
+               <img src="img/yonetim.jpg" alt="" class="img-fluid resim">
                <h5 class="baslikcard">Banü/Yönetim Bilişim Sistemleri</h5>
                <p class="cardp">İnsan, teknoloji, sistem teorisi ve bilgi yönetimi alanlarını bir araya getiren akademik bir eğitim görmektedir.</p>
            </div>
            
               <div class="card item" data-merge=1.5>
-               <img src="img/veri.jpg" alt="" class="img-fluid">
+               <img src="img/veri.jpg" alt="" class="img-fluid resim">
                <h5 class="baslikcard">Coursera/Google Proje Yöneticiliğ</h5>
                <p class="cardp">Google tarafından Temel-Orta-İleri düzeyde 6 alt sertifika eğitimini içeren bir eğitim almaktadır.</p>
            </div>
            
            <div class="card item" data-merge=1.5>
-               <img src="img/ai.jpg" alt="" class="img-fluid">
+               <img src="img/ai.jpg" alt="" class="img-fluid resim">
                <h5 class="baslikcard">Artificial Intelligence and Machine Learning</h5>
                <p class="cardp">Python ile temelden başlayarak ileri düzeye kadar giden yapay zeka ve makine öğrenimi eğitimini almıştır.</p>
            </div>
            
             <div class="card item" data-merge=1.5>
-               <img src="img/analist.jpg" alt="" class="img-fluid">
+               <img src="img/analist.jpg" alt="" class="img-fluid resim">
                <h5 class="baslikcard">GMKA/Yapay Zeka Uzmanlığı</h5>
                <p class="cardp">Python ve Tensorflow ile Yapay Zeka eğitimleri alırken R ve PowerBI ile Veri Bilimi eğitimleri almaktadır.</p>
            </div>
            
             <div class="card item" data-merge=1.5>
-               <img src="img/oua.jpg" alt="" class="img-fluid">
+               <img src="img/oua.jpg" alt="" class="img-fluid resim">
                <h5 class="baslikcard">OUA/Mobil Uygulama Programcılığı</h5>
                <p class="cardp">Flutter ve Dart ile mobil programlama eğitiminin yanında "Teknoloji Girişimciliği Eğitimi" ve "2D ve 3D Game Art Eğitimi" gibi kapsayıcı eğitimler almaktadır.</p>
            </div>
