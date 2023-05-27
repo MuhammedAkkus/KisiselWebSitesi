@@ -57,7 +57,7 @@
         <img src="img/hakkimda.jpg" alt=""
         class="img-fluid mt100">
         
-        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)</p>
+        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)<br><a href="galeri.html" target="_blank"><i class="fa-solid fa-camera-retro icon"></i>Galeri</a></p>
         
         </div>
     </sectioan>
