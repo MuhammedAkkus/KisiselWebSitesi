@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<h1>A Fancy Table</h1>
+<h1>İletişim Paneli</h1>
 
 <table id="customers">
   <tr>

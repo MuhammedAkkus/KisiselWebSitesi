@@ -1,411 +1,372 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <title>Anasayfa | Muhammed Akkuş</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        *{
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Kalam', cursive;
-            margin: 0;
-        }
+body{
+    font-family: 'Kalam', cursive;
+    margin: 0;
+}
 
-        #menu {
-            height: 80px;
-            padding: 0px 20px;
+#menu{
+    height: 80px;
+    padding: 0 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content:space-between;
             background-color: rgba(0, 0, 0, 0.09);
+            /*padding: 10px;*/
             border-radius: 5px;
             position: sticky;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 9999;
-        }
+}
 
-        #logo {
-            font-size: 30px;
-            line-height: 80px;
-            color: #003666;
-            float: left;
-        }
-
-        nav {
-            float: right;
-            line-height: 80px;
-        }
-
-        nav a:link {
-            text-decoration: none;
-            margin-right: 25px;
-            color: #003666;
-        }
-
-        nav a:hover {
-            border-bottom: 2px solid #003666;
-        }
-
-        nav a:visited {
-            text-decoration: none;
-            margin-right: 25px;
-            color: #003666;
-        }
-
-        .icon {
-            margin-right: 7px;
-            font-size: 16px;
-        }
-
-        #banner {
-            height: 600px;
-            background-image: url("../img/banner.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        #black {
-            height: 600px;
-            background-color: black;
-            opacity: 0.5;
-        }
-
-        #icerik {
-            position: absolute;
-            top: 50%;
-            left: 40%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 20px;
-        }
-
-        #hakkımda {
-            background-color: white;
-            text-align: center;
-            text-transform: capitalize;
-            font-weight: 600;
-        }
-
-        h3 {
-            font-size: 55px;
-            color: #003666;
-            text-shadow: 0px 1px 1px black;
-            font-weight: 600;
-        }
-
-        .container {
-            width: 1200px;
-            height: auto;
-            margin: auto;
-        }
-
-        #sol {
-            float: left;
-            border-right: 3px solid #445c6e;
-            font-size: 30px;
-            width: 400px;
-            color: #445c6e;
-        }
-
-        #h5sol {
-            line-height: 1.6;
-            font-size: 25px;
-            font-weight: 600;
-        }
-
-        #h5sol,
-        #sag {
-            margin: 0;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        span {
-            font-size: 50px;
-            margin-right: 7px;
-            line-height: 42px;
-            color: #003666;
-            font-weight: 600;
-            float: left;
-        }
-
-        #sag {
-            float: right;
-            width: 750px;
-            color: #999999;
-            text-align: left;
-            letter-spacing: 1px;
-            font-size: 15px;
-            line-height: 1.8;
-            font-weight: 100;
-        }
-
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .mt100 {
-            margin-top: 100px;
-        }
-
-        #pson {
-            color: #999;
-            letter-spacing: 1px;
-            font-size: 15px;
-            line-height: 1.8;
-            margin-top: 30px;
-            font-weight: 100px;
-        }
-
-        #egitimler {
-            background-color: lavender;
-            padding: 10px;
-            text-align: center;
-            height: 700px;
-        }
-
-        .card {
-            width: 320px;
-            height: 400px;
-            border: 1px solid #003666;
-            padding: 0;
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .resim {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .resim img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .baslikcard {
-            font-size: 15px;
-            color: #003666;
-        }
-
-        .popup {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            display: none;
-        }
-
-        .popup p {
-            margin: 0;
-        }
-
-        .card:hover .popup {
-            display: block;
-        }
-
-        .cardp {
-            color: #888;
-        }
-
-        .card:hover {
-            border: 2px solid #b03060;
-        }
-
-        #faaliyetler {
-            background-color: skyblue;
-            padding: 10px;
-            height: 850px;
-            text-align: center;
-        }
-
-        #faaliyetlerh3 {
-            color: white;
-        }
-
-        .sutun-sol-sag {
-            width: 405px;
-            float: left;
-            padding: 50px;
-        }
-
-        .oval {
-            border-radius: 50%;
-        }
-
-        .faaliyetlerisim {
-            color: white;
-            font-size: 25px;
-            margin-bottom: 12px;
-        }
-
-        .faal {
-            color: #888;
-            font-size: 20px;
-        }
-
-        .social {
-            color: white;
-            border: 1px solid white;
-            padding: 10px;
-            width: 50px;
-            border-radius: 5px;
-            margin: 5px 10px;
-        }
-
-        .social:hover {
-            background-color: #888;
-        }
-
-        .sutun {
-            width: 385px;
-            float: left;
-            padding: 10px;
-        }
-
-        #iletisim {
-            background: url("../img/iletisim.jpg");
-            background-size: cover;
-            padding: 50px;
-            height: auto;
-            text-align: center;
-        }
-
-        #h3iletisim {
-            color: white;
-        }
-
-        #iletisimopak {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 30px 20px;
-            border-radius: 5px;
-            margin-bottom: 50px;
-            height: 550px;
-        }
-
-        #formgroup {
-            width: 700px;
-            float: left;
-            height: 500px;
-            text-align: left;
-        }
-
-        #solform {
-            width: 50%;
-            float: left;
-            padding-right: 5px;
-        }
-
-        #sagform {
-            width: 50%;
-            float: right;
-            padding-left: 5px;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 10px;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #495057;
-            background-color: white;
-            margin: 10px;
-            border-radius: 5px;
-            border: 1px solid #ced4da;
-        }
-
-        textarea {
-            font-family: Arial;
-        }
-
-        input[type="submit"] {
-            cursor: pointer;
-            background-color: #445c6e;
-            font-size: 18px;
-            letter-spacing: 1px;
-            padding: 10px 30px;
-            color: white;
-            border: 2px solid white;
-            border-radius: 5px;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-
-        #adres {
-            width: 450px;
-            float: right;
-            height: 500px;
-        }
-
-        #adresbaslik {
-            font-size: 30px;
-        }
-
-        .adresp {
-            color: #ddd;
-            font-size: 15px;
-            letter-spacing: 1.5px;
-        }
-
-        #copyright {
-            color: white;
-            font-size: 20px;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        #up {
-            color: white;
-            font-size: 20px;
-            padding: 15px 12px;
-            margin-top: 20px;
-            letter-spacing: 2px;
-        }
-
-        @keyframes scrollDown {
+@keyframes scrollDown {
             0% {
                 transform: translateY(-100%);
                 opacity: 0;
             }
-
             100% {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
+
+#logo{
+    font-size: 30px;
+    line-height: 80px;
+    color: darkcyan ;
+    float: left;
+}
+
+nav{
+    float: right;
+    line-height: 80px;
+}
+
+nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+    color: darkcyan;
+}
+nav a:hover{
+    border-bottom: 2px solid
+    darkcyan;
+}
+
+nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color: darkcyan;
+}
+
+.icon{
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+#banner{
+    height:600px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+
+#hakkımda{
+    background-color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 55px;
+    color: #003666;
+    text-shadow: 0px 1px 1px
+        black;
+        font-weight: 600;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+} 
+
+#sol{
+    float: left;
+    border-right: 3px solid
+    #445c6e;
+    font-size: 30px;
+    width: 400px;
+    color: #445c6e;
+}
+
+#h5sol{
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 600;
+}
+#h5sol, #sag{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+span{
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color: #003666;
+    font-weight: 600;
+    float: left;
+}
+
+#sag{
+    float: right;
+    width: 750px;
+    color: #999999;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.mt100{
+    margin-top: 100px;
+}
+
+#pson{
+    color: #999;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-weight: 100px;
+}
+
+#egitimler{
+    background-color: lavender;
+    padding: 10px;
+    text-align: center;
+    height: 700px;
+}
+
+.card{
+    width: 320px;
+    height: 400px;
+    border: 1px solid
+    #003666;
+    padding: 0;
+    display: inline-block;
+}
+
+.baslikcard{
+    font-size: 15px;
+    color: #003666;
+}
+
+.cardp{
+    color: #888;
+}
+
+.card:hover{
+    border: 2px solid
+    #b03060;
+}
+
+#faaliyetler{
+    background-color: skyblue;
+    padding: 10px;
+    height: 850px;
+    text-align: center;
+}
+
+#faaliyetlerh3{
+    color: white;
+}
+
+.sutun-sol-sag{
+    width: 405px;
+    float: left;
+    padding: 50px;
+}
+
+.oval{
+    border-radius: 50%;
+}
+
+.faaliyetlerisim{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.faal{
+    color: #888;
+    font-size: 20px;
+}
+
+.social{
+    color: white;
+    border:1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.social:hover{
+    background-color: #888;
+}
+
+.sutun{
+    width: 385px;
+    float: left;
+    padding: 10px;
+}
+
+#iletisim{
+    background: url("../img/iletisim.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+
+#h3iletisim{
+    color: white;
+}
+
+#iletisimopak{
+    background: rgba(255,255,255,0.2);
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+
+#formgroup{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform{
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#sagform{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+textarea{
+    font-family: Arial;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    background-color: #445c6e;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#adres{
+    width: 450px;
+    float: right;
+    height: 500px;
+}
+
+#adresbaslik{
+    font-size: 30px;
+}
+
+.adresp{
+    color: #ddd;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+#copyright{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#up{
+    color: white;
+    font-size: 20px;
+    padding: 15px 12px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
     </style>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+   
     <script src="https://kit.fontawesome.com/f2ff860d39.js" crossorigin="anonymous"></script>
-
+    
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+<link rel="stylesheet" href="owl/owl.theme.default.min.css">
 
 </head>
-
 <body>
-
+    
     <section id="menu">
         <div id="logo">Muhammed Akkuş</div>
         <nav>
@@ -416,20 +377,20 @@
             <a href="#iletisim"><i class="fa-solid fa-satellite icon"></i>İletişim</a>
         </nav>
     </section>
-
+    
     <section id="banner">
         <div id="black">
-
+            
         </div>
-
+        
         <div id="icerik">
-            <h2>Muhammed Akkuş</h2>
-            <hr width=300 align=left>
-            <p>Google Developer Student Clubs ile Sosyal Etkinlik ve Eğlence Topluluğunun eş zamanlı Proje Koordinatörlüğü yürüten Muhammed Akkuş (sol-arka dördüncü) ve Google Developer Student Clubs (siyah t-shirt) ile Sosyal Etkinlik ve Eğlence Topluluğu (beyaz t-shirt) ekiplerine ait bir fotoğraf...</p>
-
+           <h2>Muhammed Akkuş</h2>
+           <hr width=300 align=left>
+           <p>Google Developer Student Clubs ile Sosyal Etkinlik ve Eğlence Topluluğunun eş zamanlı Proje Koordinatörlüğü yürüten Muhammed Akkuş (sol-arka dördüncü) ve Google Developer Student Clubs (siyah t-shirt) ile Sosyal Etkinlik ve Eğlence Topluluğu (beyaz t-shirt) ekiplerine ait bir fotoğraf...</p>
+            
         </div>
     </section>
-
+    
     <sectioan id="hakkımda">
         <h3>Hakkımda</h3>
         <div class="container">
@@ -437,212 +398,213 @@
                 <h5 id="h5sol">Because the only thing that stays with you from the moment you're born until the moment you die is your dreams.</h5>
             </div>
             <div id="sag">
-                <span>B</span>
-                <p id="psag">
-                    andırma Onyedi Eylül Üniversitesi – Bilgisayar Mühendisliği bölümü üzerine eğitim hayatına devam etmektedir. Kendini geliştirmeyi seven, sıcakkanlı, çözüm odaklı, araştırmacı, girişken biridir. Veri Bilimi ve Makine Öğrenimi üzerine uzmanlaşmaktadır. Python, Matlab, MySQL, PowerBI en çok kullandığı yazılım enstrünmanlarıdır. Yazılımı bir amaçtan ziyade hayallerine somut bir biçim kazandırabildiği bir araç olarak görmektedir.
+               <span>B</span>
+               <p id="psag">
+                   andırma Onyedi Eylül Üniversitesi – Bilgisayar Mühendisliği bölümü üzerine eğitim hayatına devam etmektedir. Kendini geliştirmeyi seven, sıcakkanlı, çözüm odaklı, araştırmacı, girişken biridir. Veri Bilimi ve Makine Öğrenimi üzerine uzmanlaşmaktadır. Python, Matlab, MySQL, PowerBI en çok kullandığı yazılım enstrünmanlarıdır. Yazılımı bir amaçtan ziyade hayallerine somut bir biçim kazandırabildiği bir araç olarak görmektedir. 
             </div>
-
-
-            <img src="img/hakkimda.jpg" alt="" class="img-fluid mt100">
-
-            <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)<br><a href="galeri.html" target="_blank"><i class="fa-solid fa-camera-retro icon"></i>Galeri</a></p>
-
+  
+        
+        <img src="img/hakkimda.jpg" alt=""
+        class="img-fluid mt100">
+        
+        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)<br><a href="galeri.html" target="_blank"><i class="fa-solid fa-camera-retro icon"></i>Galeri</a></p>
+        
         </div>
     </sectioan>
-
+    
     <section id="egitimler">
-        <div class="container">
-            <h3>Eğitimler</h3>
-            <div class="owl-carousel owl-theme">
-
-                <div class="card item" data-merge=1.5>
-                    <img src="img/bilgisayar.jpg" alt="" class="img-fluid">
-                    <h5 class="baslikcard">Banü/Bilgisayar Mühendisliği</h5>
-                    <p class="cardp">Bilgisayar ve bilgisayar tabanlı sistemlerin yazılım ve donanımlarının tasarımı, gerçekleştirimi ve yönetimi ile ilgili eğitimler görmektedir.</p>
-                </div>
-
-                <div class="card item" data-merge=1.5>
-                    <img src="img/yonetim.jpg" alt="" class="img-fluid">
-                    <h5 class="baslikcard">Banü/Yönetim Bilişim Sistemleri</h5>
-                    <p class="cardp">İnsan, teknoloji, sistem teorisi ve bilgi yönetimi alanlarını bir araya getiren akademik bir eğitim görmektedir.</p>
-                </div>
-
-                <div class="card item" data-merge=1.5>
-                    <img src="img/veri.jpg" alt="" class="img-fluid">
-                    <h5 class="baslikcard">Coursera/Google Proje Yöneticiliğ</h5>
-                    <p class="cardp">Google tarafından Temel-Orta-İleri düzeyde 6 alt sertifika eğitimini içeren bir eğitim almaktadır.</p>
-                </div>
-
-                <div class="card item" data-merge=1.5>
-                    <img src="img/ai.jpg" alt="" class="img-fluid">
-                    <h5 class="baslikcard">Artificial Intelligence and Machine Learning</h5>
-                    <p class="cardp">Python ile temelden başlayarak ileri düzeye kadar giden yapay zeka ve makine öğrenimi eğitimini almıştır.</p>
-                </div>
-
-                <div class="card item" data-merge=1.5>
-                    <img src="img/analist.jpg" alt="" class="img-fluid">
-                    <h5 class="baslikcard">GMKA/Yapay Zeka Uzmanlığı</h5>
-                    <p class="cardp">Python ve Tensorflow ile Yapay Zeka eğitimleri alırken R ve PowerBI ile Veri Bilimi eğitimleri almaktadır.</p>
-                </div>
-
-                <div class="card item" data-merge=1.5>
-                    <img src="img/oua.jpg" alt="" class="img-fluid">
-                    <h5 class="baslikcard">OUA/Mobil Uygulama Programcılığı</h5>
-                    <p class="cardp">Flutter ve Dart ile mobil programlama eğitiminin yanında "Teknoloji Girişimciliği Eğitimi" ve "2D ve 3D Game Art Eğitimi" gibi kapsayıcı eğitimler almaktadır.</p>
-                </div>
-
-
-                <div class="popup">
-                    <p>Bilgi kutucuğunda gösterilecek metin.</p>
-                </div>
-            </div>
+       <div class="container">
+           
+           <h3>Eğitimler</h3>
+       <div class="owl-carousel owl-theme">
+           
+           <div class="card item" data-merge=1.5>
+               <img src="img/bilgisayar.jpg" alt="" class="img-fluid">
+               <h5 class="baslikcard">Banü/Bilgisayar Mühendisliği</h5>
+               <p class="cardp">Bilgisayar ve bilgisayar tabanlı sistemlerin yazılım ve donanımlarının tasarımı, gerçekleştirimi ve yönetimi ile ilgili eğitimler görmektedir.</p>
+           </div>
+           
+           <div class="card item" data-merge=1.5>
+               <img src="img/yonetim.jpg" alt="" class="img-fluid">
+               <h5 class="baslikcard">Banü/Yönetim Bilişim Sistemleri</h5>
+               <p class="cardp">İnsan, teknoloji, sistem teorisi ve bilgi yönetimi alanlarını bir araya getiren akademik bir eğitim görmektedir.</p>
+           </div>
+           
+              <div class="card item" data-merge=1.5>
+               <img src="img/veri.jpg" alt="" class="img-fluid">
+               <h5 class="baslikcard">Coursera/Google Proje Yöneticiliğ</h5>
+               <p class="cardp">Google tarafından Temel-Orta-İleri düzeyde 6 alt sertifika eğitimini içeren bir eğitim almaktadır.</p>
+           </div>
+           
+           <div class="card item" data-merge=1.5>
+               <img src="img/ai.jpg" alt="" class="img-fluid">
+               <h5 class="baslikcard">Artificial Intelligence and Machine Learning</h5>
+               <p class="cardp">Python ile temelden başlayarak ileri düzeye kadar giden yapay zeka ve makine öğrenimi eğitimini almıştır.</p>
+           </div>
+           
+            <div class="card item" data-merge=1.5>
+               <img src="img/analist.jpg" alt="" class="img-fluid">
+               <h5 class="baslikcard">GMKA/Yapay Zeka Uzmanlığı</h5>
+               <p class="cardp">Python ve Tensorflow ile Yapay Zeka eğitimleri alırken R ve PowerBI ile Veri Bilimi eğitimleri almaktadır.</p>
+           </div>
+           
+            <div class="card item" data-merge=1.5>
+               <img src="img/oua.jpg" alt="" class="img-fluid">
+               <h5 class="baslikcard">OUA/Mobil Uygulama Programcılığı</h5>
+               <p class="cardp">Flutter ve Dart ile mobil programlama eğitiminin yanında "Teknoloji Girişimciliği Eğitimi" ve "2D ve 3D Game Art Eğitimi" gibi kapsayıcı eğitimler almaktadır.</p>
+           </div>
+           
+            
+           </div>
+           
         </div>
+        
     </section>
-
+    
     <section id="faaliyetler">
-        <div class="container">
-            <h3 id="faaliyetlerh3">Faaliyetler</h3>
-
-            <div class="sutun-sol-sag">
-                <img src="img/dsc.jpg" alt="" class="img-fluid oval">
-                <h4 class="faaliyetlerisim">Google DSC</h4>
-                <p class="faal">Google çatısı altında "Google Teknolojileri" başta olmak üzere her türlü yazılım ve teknolojik organizasyonu yönetme görevini yürüttüm.</p>
-
-                <div class="faaliyet-ikon">
-                    <a href="https://www.linkedin.com/company/gdsc-banu/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
-                    <a href="https://www.instagram.com/gdscbanu/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
-                    <a href="https://gdsc.community.dev/bandirma-onyedi-eylul-university/" target="_blank"><i class="fa-brands fa-google social"></i></a>
-                </div>
-
-            </div>
-
-            <div class="sutun">
-                <img src="img/set.jpg" alt="" class="img-fluid oval">
-                <h4 class="faaliyetlerisim">BANÜ SET</h4>
-                <p class="faal">Üniversite bünyesinde bulunan en büyük öğrenci topluluğunun her alanda gerçekleştirdiği projeleri oluşturma, yürütme ve kontrol etme görevlerini üstlendim.</p>
-
-                <div class="faaliyet-ikon">
-                    <a href="https://www.linkedin.com/company/banuset/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
-                    <a href="https://www.instagram.com/banu.set/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
-                    <a href="https://linktr.ee/banu.set" target="_blank"><i class="fa-brands fa-google social"></i></a>
-                </div>
-
-            </div>
-
-            <div class="sutun-sol-sag">
-                <img src="img/akademi.jpg" alt="" class="img-fluid oval">
-                <h4 class="faaliyetlerisim">Google Akademisi</h4>
-                <p class="faal">Mobil Programlama Eğitimi, Google Proje Yönetimi eğitimi, Teknoloji Girişimciliği Eğitimi, 2D ve 3D Game Art Eğitimi aldığım Trainee deneyimine devam ediyorum.</p>
-
-                <div class="faaliyet-ikon">
-                    <a href="https://www.linkedin.com/company/oyun-ve-uygulama-akademisi/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
-                    <a href="https://www.instagram.com/oyunveuygulamaakademisi/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
-                    <a href="https://www.oyunveuygulamaakademisi.com/" target="_blank"><i class="fa-brands fa-google social"></i></a>
-                </div>
-            </div>
-
-        </div>
-
+       <div class="container">
+           <h3 id="faaliyetlerh3">Faaliyetler</h3>
+           
+           <div class="sutun-sol-sag">
+               <img src="img/dsc.jpg" alt="" class="img-fluid oval">
+               <h4 class="faaliyetlerisim">Google DSC</h4>
+               <p class="faal">Google çatısı altında "Google Teknolojileri" başta olmak üzere her türlü yazılım ve teknolojik organizasyonu yönetme görevini yürüttüm.</p>
+               
+               <div class="faaliyet-ikon">
+                   <a href="https://www.linkedin.com/company/gdsc-banu/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                   <a href="https://www.instagram.com/gdscbanu/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                   <a href="https://gdsc.community.dev/bandirma-onyedi-eylul-university/" target="_blank"><i class="fa-brands fa-google social"></i></a>
+               </div>
+               
+           </div>
+           
+           <div class="sutun">
+               <img src="img/set.jpg" alt="" class="img-fluid oval">
+               <h4 class="faaliyetlerisim">BANÜ SET</h4>
+               <p class="faal">Üniversite bünyesinde bulunan en büyük öğrenci topluluğunun her alanda gerçekleştirdiği projeleri oluşturma, yürütme ve kontrol etme görevlerini üstlendim.</p>
+               
+               <div class="faaliyet-ikon">
+                   <a href="https://www.linkedin.com/company/banuset/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                   <a href="https://www.instagram.com/banu.set/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                   <a href="https://linktr.ee/banu.set" target="_blank"><i class="fa-brands fa-google social"></i></a>
+               </div>
+               
+           </div>
+           
+           <div class="sutun-sol-sag">
+               <img src="img/akademi.jpg" alt="" class="img-fluid oval">
+               <h4 class="faaliyetlerisim">Google Akademisi</h4>
+               <p class="faal">Mobil Programlama Eğitimi, Google Proje Yönetimi eğitimi, Teknoloji Girişimciliği Eğitimi, 2D ve 3D Game Art Eğitimi aldığım Trainee deneyimine devam ediyorum.</p>
+               
+               <div class="faaliyet-ikon">
+                   <a href="https://www.linkedin.com/company/oyun-ve-uygulama-akademisi/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                   <a href="https://www.instagram.com/oyunveuygulamaakademisi/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                   <a href="https://www.oyunveuygulamaakademisi.com/" target="_blank"><i class="fa-brands fa-google social"></i></a>
+               </div>
+           </div>
+           
+       </div>
+        
     </section>
-
+    
     <section id="iletisim">
         <div class="container">
             <h3 id="h3iletisim">İletişim</h3>
-
+            
             <form action="index.php" method="post">
-
-                <div id="iletisimopak">
-
-                    <div id="formgroup">
-                        <div id="solform">
-                            <input type="text" name="isim" placeholder="Ad Soyad" required class="form-control">
-                            <input type="text" name="tel" placeholder="Telefon Numarası" required class="form-control">
-                        </div>
-                        <div id="sagform">
-                            <input type="email" name="mail" placeholder="Mail Adresiniz" required class="form-control">
-                            <input type="text" name="konu" placeholder="Konu Başlığı" required class="form-control">
-                        </div>
-
-                        <textarea name="mesaj" id="" cols="30" placeholder="Mesaj Giriniz" rows="10" required class="form-control"></textarea>
-
-                        <input type="submit" value="Gönder">
+            
+            <div id="iletisimopak">
+                
+                <div id="formgroup">
+                    <div id="solform">
+                        <input type="text" name="isim" placeholder="Ad Soyad" required class="form-control">
+                        <input type="text" name="tel" placeholder="Telefon Numarası" required class="form-control">
                     </div>
-                    <div id="adres">
-
-                        <h4 id="adresbaslik">Adres: </h4>
-                        <p class="adresp">Yeni Mah.</p>
-                        <p class="adresp">Şehit Tnk. Teğmen Doğuş Uran Caddesi</p>
-                        <p class="adresp">1165. Sokak NO:105/A</p>
-                        <p class="adresp">Bandırma/Balıkesir</p>
-                        <p class="adresp">0531 770 5059</p>
-                        <p class="adresp">Email: muhammedakkus.tr@gmail.com</p>
-
-
+                    <div id="sagform">
+                        <input type="email" name="mail" placeholder="Mail Adresiniz" required class="form-control">
+                        <input type="text" name="konu" placeholder="Konu Başlığı" required class="form-control">
                     </div>
-
+                    
+                    <textarea name="mesaj" id="" cols="30" placeholder="Mesaj Giriniz" rows="10" required class="form-control"></textarea>
+                    
+                    <input type="submit" value="Gönder">
+                    </div>
+                <div id="adres">
+                    
+                    <h4 id="adresbaslik">Adres: </h4>
+                    <p class="adresp">Yeni Mah.</p>
+                    <p class="adresp">Şehit Tnk. Teğmen Doğuş Uran Caddesi</p>
+                    <p class="adresp">1165. Sokak NO:105/A</p>
+                    <p class="adresp">Bandırma/Balıkesir</p>
+                    <p class="adresp">0531 770 5059</p>
+                    <p class="adresp">Email: muhammedakkus.tr@gmail.com</p>
+                    
+                    
                 </div>
+                
+            </div>
             </form>
             <footer>
-
+                
                 <div id="copyright">2023 |
-
-                    Tüm hakları Saklıdır</div>
-
-                <div id="socialfooter">
-
-                    <a href="https://www.linkedin.com/in/muhammedakkus/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
-                    <a href="https://www.instagram.com/mhmdakkus/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
-                    <a href="mailto:muhammedakkus.tr@gmail.com" target="_blank"><i class="fa-brands fa-google social"></i></a>
-                    <a href="https://github.com/MuhammedAkkus" target="_blank"><i class="fa-brands fa-github social"></i></a>
-                    <a href="https://drive.google.com/file/d/1pWcJn1hDFo9vPBZof6T157AYwE_0tp7g/view?usp=sharing" target="_blank"><i class="fa-solid fa-id-card social"></i></a>
-
+           
+               Tüm hakları Saklıdır</div>
+               
+               <div id="socialfooter"> 
+               
+                <a href="https://www.linkedin.com/in/muhammedakkus/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                <a href="https://www.instagram.com/mhmdakkus/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+                <a href="mailto:muhammedakkus.tr@gmail.com" target="_blank"><i class="fa-brands fa-google social"></i></a>
+                <a href="https://github.com/MuhammedAkkus" target="_blank"><i class="fa-brands fa-github social"></i></a>
+                <a href="https://drive.google.com/file/d/1pWcJn1hDFo9vPBZof6T157AYwE_0tp7g/view?usp=sharing" target="_blank"><i class="fa-solid fa-id-card social"></i></a>
+                
                 </div>
-
-                <a href="#menu"><i class="fa-solid fa-jet-fighter-up" id="up"> Touch Me</i></a>
-
+                
             </footer>
-
+            
         </div>
-    </section>
+        </section>
+        
+        <section id="touchme">
+             <a href="#banner"><i class="fa-solid fa-jet-fighter-up" id="up"> Touch Me</i></a>
+        </section>
+    
+    
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>    
+    
+<script src="owl/owl.carousel.min.js"></script>
 
+<script src="owl/script.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
-
-    <script src="owl/owl.carousel.min.js"></script>
-
-    <script src="owl/script.js"></script>
-
-    <script>
+<script>
         // Animasyonlu kaydırma
         document.querySelectorAll('#menu a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = document.querySelector(link.getAttribute('href'));
-                const targetTop = target.getBoundingClientRect().top;
-                const scrollOffset = window.pageYOffset || document.documentElement.scrollTop;
-                const targetPosition = targetTop + scrollOffset;
-                const duration = 1000; // ms
-                const startTime = performance.now();
-
-                const scroll = () => {
-                    const elapsed = performance.now() - startTime;
-                    const progress = Math.min(elapsed / duration, 1);
-                    const easeProgress = 0.5 - 0.5 * Math.cos(Math.PI * progress);
-                    const currentPosition = scrollOffset + (targetPosition - scrollOffset) * easeProgress;
-                    window.scrollTo(0, currentPosition);
-
-                    if (progress < 1) {
-                        requestAnimationFrame(scroll);
-                    }
-                };
-
-                requestAnimationFrame(scroll);
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+<script>
+        // Animasyonlu kaydırma
+        document.querySelectorAll('#touchme a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
 
 </body>
-
 </html>
 
 

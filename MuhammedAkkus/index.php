@@ -20,7 +20,7 @@
     <section id="menu">
         <div id="logo">Muhammed Akkuş</div>
         <nav>
-            <a href="index.php"><i class="fa-solid fa-otter icon"></i>Anasayfa</a>
+            <a href="#" onclick="Top(); return false;"><i class="fa-solid fa-otter icon"></i>Anasayfa</a>
             <a href="#hakkımda"><i class="fa-solid fa-user-astronaut icon"></i>Hakkımda</a>
             <a href="#egitimler"><i class="fa-solid fa-biohazard icon"></i>Eğitim ve Sertifakalar</a>
             <a href="#faaliyetler"><i class="fa-brands fa-space-awesome icon"></i>Faaliyetler</a>
@@ -57,7 +57,7 @@
         <img src="img/hakkimda.jpg" alt=""
         class="img-fluid mt100">
         
-        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)<br><a href="galeri.html" target="_blank"><i class="fa-solid fa-camera-retro icon"></i>Galeri</a></p>
+        <p id="pson">Döneminin en başarılı etkinliklerinden biri olan "Techno Z" etkinliğini gerçekleştiren Bandırma Onyedi Eylül Üniversitesi Google Developer Student Clubs ekibi ve ekibin Proje Koordinatörü Muhammed Akkuş (sol-arka ikinci)<br><a href="galeri.php" target="_blank"><i class="fa-solid fa-camera-retro icon"></i>Galeri</a></p>
         
         </div>
     </sectioan>
@@ -210,7 +210,7 @@
                 
                 </div>
                 
-                <a href="#menu"><i class="fa-solid fa-jet-fighter-up" id="up"> Touch Me</i></a>
+                <a href="#" onclick="goToTop(); return false;"><i class="fa-solid fa-jet-fighter-up" id="up"> Touch Me</i></a>
                 
             </footer>
             
@@ -225,7 +225,6 @@
 <script src="owl/script.js"></script>
 
 <script>
-        // Animasyonlu kaydırma
         document.querySelectorAll('#menu a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -237,6 +236,34 @@
             });
         });
     </script>
+    
+    <script>
+  document.querySelectorAll('#iletisim a[href="#banner"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+    </script>
+        
+<script>
+function goToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+<script>
+function Top() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(function() {
+        window.location.reload();
+    }, 1000);
+}
+</script>
 
 </body>
 </html>
