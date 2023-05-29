@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<h1>A Fancy Table</h1>
+<h1>İletişim Paneli</h1>
 
 <table id="customers">
   <tr>
@@ -38,18 +38,60 @@
     <th>Konu</th>
     <th>Mesaj</th>
   </tr>
-  
+     
+<?php
+
+    session_start();
+    
+    if($_SESSION['user']=="")
+    {
+        echo "<script>window.location.href='cikis.php'</script>";
+    }
+    
+    else
+    {
+    
+    echo "Kullanıcı Adınız:".$_SESSION['user']."<br>";
+    echo "<a href='cikis.php'>ÇIKIŞ YAP</a><br><br>";
+    
+include("baglanti.php");
+
+$sec="Select * From iletisim";
+$sonuc=$baglan->query($sec);
+
+if($sonuc->num_rows>0)
+{
+    while($cek=$sonuc->fetch_assoc())
+    {
+        echo "
+        
   <tr>
-      <td>Muhammed Akkuş</td>
-      <td>muhammedakkus.tr@gmail.com</td>
-      <td>05317705059</td>
-      <td>Deneme</td>
-      <td>Bu bir test mesajıdır.</td>
+      <td>".$cek['adsoyad']."</td>
+      <td>".$cek['mail']."</td>
+      <td>".$cek['telefon']."</td>
+      <td>".$cek['konu']."</td>
+      <td>".$cek['mesaj']."</td>
   </tr>
+       
+  ";
+    }
+}
+
+else
+{
+    echo "Veritabanında Kayıtlı Hiçbir Veri Bulunamamıştır!";
+}
+
+}
+    
+?>      
+
   
 </table>
 
 </body>
 </html>
+
+
 
 
