@@ -3,6 +3,16 @@
 - **Muhammed Akkuş**
 - **2111502053**
 - **Bilgisayar Mühendisliği(TR) 2. Sınıf**
+- Not: Sitedeki sayfalar .php uzantısına sahip olduğundan ilgili sayfaları incelemek için Xampp Control Panel'i başta olmak üzere bir web sunucusu kullanmanızı öneririm. Bir web sunucusuna sahip değilseniz kod dosyalarının uzantılarını .php yerine .hmtl'ye çevirebilir ve ardından kod içerisinde şu değişiklikleri yapar ilgili sayfaları inceleyebilirsiniz:
+  - index.php dosyası 60. satırda bulunan galeri.php ifadesini galeri.html yapmalısınız.(Çünkü ilgili dosyayı incelemek için uzantısını değiştirdiniz.)
+  - index.php dosyası 164. satırda bulunan index.php ifadesini index.html yapmalısınız.
+  - index.php dosyası 274. satırda bulunan baglanti.php ifadesini baglanti.html yapmalısınız.(İşlevselliğinin düşmesine sebep olacaktır.)
+  - panel.php dosyası 57. satırda bulunan baglanti.php ifadesini baglanti.html yapmalısınız.(İşlevselliğinin düşmesine sebep olacaktır.)
+  - panelgiris.php dosyasının 52. satırında bulunan panelgiris.php ifadesini panelgiris.html yapmalısınız.
+  - panelgiris.php dosyasının 86. satırında bulunan panel.php ifadesini panel.html yapmalısınız.
+  - cikis.php dosyasının 8. satırında bulunan panelgiris.php ifadesini panelgiris.html yapmalısınız.
+  - index.php, baglanti.php,  panel.php, panelgiris.php, cikis.php, galeri.php dosyalarının uzantılarını sırasıyla index.html, baglanti.html, panel.html, panelgiris.html, cikis.html, galeri.html yaptığınızdan emin olunuz!!!
+  - Bir sıkıntı yaşamanız durumunda muhammedakkus.tr@gmail.com mail adresimden iletişime geçebilirsiniz.
 
 - ## Site ile ilgili bilgiler:
 - => *Sitemiz index.php(anasayfa), panel.php(iletişim kontrol paneli), panelgiris.php(iletişim kontrol paneline giriş paneli), galeri.php(galeri sayfası) olmak üzere 4 farklı sayfadan oluşuyor.*
