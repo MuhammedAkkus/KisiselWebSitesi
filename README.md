@@ -3,7 +3,7 @@
 - **Muhammed Akkuş**
 - **2111502053**
 - **Bilgisayar Mühendisliği(TR) 2. Sınıf**
-- Not: Sitedeki sayfalar .php uzantısına sahip olduğundan ilgili sayfaları incelemek için Xampp Control Panel'i başta olmak üzere bir web sunucusu kullanmanızı öneririm. Bir web sunucusuna sahip değilseniz kod dosyalarının uzantılarını .php yerine .hmtl'ye çevirebilir ve ardından kod içerisinde şu değişiklikleri yapar ilgili sayfaları inceleyebilirsiniz:
+- Not: Sitedeki sayfalar .php uzantısına sahip olduğundan ilgili sayfaları incelemek için Xampp Control Panel'i başta olmak üzere bir web sunucusu kullanmanızı öneririm. Bir web sunucusuna sahip değilseniz kod dosyalarının uzantılarını .php yerine .html'e çevirebilir ve ardından kod içerisinde şu değişiklikleri yaparak ilgili sayfaları inceleyebilirsiniz:
   - index.php dosyası 60. satırda bulunan galeri.php ifadesini galeri.html yapmalısınız.(Çünkü ilgili dosyayı incelemek için uzantısını değiştirdiniz.)
   - index.php dosyası 164. satırda bulunan index.php ifadesini index.html yapmalısınız.
   - index.php dosyası 274. satırda bulunan baglanti.php ifadesini baglanti.html yapmalısınız.(İşlevselliğinin düşmesine sebep olacaktır.)
