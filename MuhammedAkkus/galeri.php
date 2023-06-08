@@ -120,23 +120,23 @@
         </div>
 
         <div class="resim" id="resim1">
-            <img src="img/analist.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 2</div>
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
         </div>
 
         <div class="resim" id="resim1">
-            <img src="img/bilgisayar.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 3</div>
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
         </div>
 
         <div class="resim" id="resim1">
-            <img src="img/yonetim.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 4</div>
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
         </div>
 
         <div class="resim" id="resim1">
-            <img src="img/veri.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 5</div>
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
         </div>
         
         <div class="resim" id="resim1">
@@ -145,28 +145,49 @@
         </div>
 
         <div class="resim" id="resim1">
-            <img src="img/analist.jpg" alt="Resim 1">
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
+        </div>
+
+        <div class="resim" id="resim1">
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
+        </div>
+
+        <div class="resim" id="resim1">
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
+        </div>
+
+        <div class="resim" id="resim1">
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
+        </div>
+        
+        <div class="resim" id="resim1">
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
+        </div>
+
+        <div class="resim" id="resim1">
+            <img src="img/AI.jpg" alt="Resim 1">
+            <div class="aciklama">Resim 1</div>
+        </div>
+                
+        <div class="resim" id="resim2">
+            <img src="img/analist.jpg" alt="Resim 2">
             <div class="aciklama">Resim 2</div>
         </div>
 
-        <div class="resim" id="resim1">
-            <img src="img/bilgisayar.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 3</div>
+        <div class="resim" id="resim2">
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
         </div>
 
-        <div class="resim" id="resim1">
-            <img src="img/yonetim.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 4</div>
-        </div>
-
-        <div class="resim" id="resim1">
-            <img src="img/veri.jpg" alt="Resim 1">
-            <div class="aciklama">Resim 5</div>
-        </div>
         
         <div class="resim" id="resim2">
-            <img src="img/AI.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 1</div>
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
         </div>
 
         <div class="resim" id="resim2">
@@ -175,23 +196,8 @@
         </div>
 
         <div class="resim" id="resim2">
-            <img src="img/bilgisayar.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 3</div>
-        </div>
-
-        <div class="resim" id="resim2">
-            <img src="img/yonetim.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 4</div>
-        </div>
-
-        <div class="resim" id="resim2">
-            <img src="img/veri.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 5</div>
-        </div>
-        
-        <div class="resim" id="resim2">
-            <img src="img/AI.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 1</div>
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
         </div>
 
         <div class="resim" id="resim2">
@@ -200,28 +206,48 @@
         </div>
 
         <div class="resim" id="resim2">
-            <img src="img/bilgisayar.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 3</div>
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
+        </div>
+        
+        <div class="resim" id="resim2">
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
         </div>
 
         <div class="resim" id="resim2">
-            <img src="img/yonetim.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 4</div>
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
         </div>
 
         <div class="resim" id="resim2">
-            <img src="img/veri.jpg" alt="Resim 2">
-            <div class="aciklama">Resim 5</div>
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
+        </div>
+
+        <div class="resim" id="resim2">
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
+        </div>
+
+        <div class="resim" id="resim2">
+            <img src="img/analist.jpg" alt="Resim 2">
+            <div class="aciklama">Resim 2</div>
         </div>
         
         <div class="resim" id="resim3">
-            <img src="img/AI.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 1</div>
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
         </div>
 
         <div class="resim" id="resim3">
-            <img src="img/analist.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 2</div>
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
+        </div>
+        
+        <div class="resim" id="resim3">
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
         </div>
 
         <div class="resim" id="resim3">
@@ -230,23 +256,8 @@
         </div>
 
         <div class="resim" id="resim3">
-            <img src="img/yonetim.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 4</div>
-        </div>
-
-        <div class="resim" id="resim3">
-            <img src="img/veri.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 5</div>
-        </div>
-        
-        <div class="resim" id="resim3">
-            <img src="img/AI.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 1</div>
-        </div>
-
-        <div class="resim" id="resim3">
-            <img src="img/analist.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 2</div>
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
         </div>
 
         <div class="resim" id="resim3">
@@ -255,28 +266,38 @@
         </div>
 
         <div class="resim" id="resim3">
-            <img src="img/yonetim.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 4</div>
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
+        </div>
+        
+        <div class="resim" id="resim3">
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
         </div>
 
         <div class="resim" id="resim3">
-            <img src="img/veri.jpg" alt="Resim 3">
-            <div class="aciklama">Resim 5</div>
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
+        </div>
+
+        <div class="resim" id="resim3">
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
+        </div>
+
+        <div class="resim" id="resim3">
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
+        </div>
+
+        <div class="resim" id="resim3">
+            <img src="img/bilgisayar.jpg" alt="Resim 3">
+            <div class="aciklama">Resim 3</div>
         </div>
         
         <div class="resim" id="resim4">
-            <img src="img/AI.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 1</div>
-        </div>
-
-        <div class="resim" id="resim4">
-            <img src="img/analist.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 2</div>
-        </div>
-
-        <div class="resim" id="resim4">
-            <img src="img/bilgisayar.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 3</div>
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
         </div>
 
         <div class="resim" id="resim4">
@@ -285,23 +306,8 @@
         </div>
 
         <div class="resim" id="resim4">
-            <img src="img/veri.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 5</div>
-        </div>
-        
-        <div class="resim" id="resim4">
-            <img src="img/AI.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 1</div>
-        </div>
-
-        <div class="resim" id="resim4">
-            <img src="img/analist.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 2</div>
-        </div>
-
-        <div class="resim" id="resim4">
-            <img src="img/bilgisayar.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 3</div>
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
         </div>
 
         <div class="resim" id="resim4">
@@ -310,28 +316,73 @@
         </div>
 
         <div class="resim" id="resim4">
-            <img src="img/veri.jpg" alt="Resim 4">
-            <div class="aciklama">Resim 5</div>
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+        
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
+        </div>
+
+        <div class="resim" id="resim4">
+            <img src="img/yonetim.jpg" alt="Resim 4">
+            <div class="aciklama">Resim 4</div>
         </div>
         
         <div class="resim" id="resim5">
-            <img src="img/AI.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 1</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
-            <img src="img/analist.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 2</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
-            <img src="img/bilgisayar.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 3</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
-            <img src="img/yonetim.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 4</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
+        </div>
+
+        <div class="resim" id="resim5">
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
+        </div>
+
+        <div class="resim" id="resim5">
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
@@ -340,23 +391,23 @@
         </div>
         
         <div class="resim" id="resim5">
-            <img src="img/AI.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 1</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
-            <img src="img/analist.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 2</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
-            <img src="img/bilgisayar.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 3</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
-            <img src="img/yonetim.jpg" alt="Resim 5">
-            <div class="aciklama">Resim 4</div>
+            <img src="img/veri.jpg" alt="Resim 5">
+            <div class="aciklama">Resim 5</div>
         </div>
 
         <div class="resim" id="resim5">
