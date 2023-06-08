@@ -1,0 +1,1 @@
+galeri.php dosyası içerisinde 5 başlık ve her başlığın altında 12 resim bulunmaktadır. Kendime ait siteye koyulabilecek şekilde 60 resime sahip olmadığımdan ve ekstra 60 resim ekleyerek dosya boyutunu büyütmek istemediğimden sitede daha önce kullanılmış 5 resim üzerinden sayfanın çalışma mantığını gösterdim. 
